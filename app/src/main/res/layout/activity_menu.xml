@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        tools:context=".MenuActivity">
+
+        <Button
+            android:id="@+id/btnProjectHello"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Project Hello"
+            android:background="@drawable/custom_button_background"
+            android:textColor="@android:color/white"
+            android:onClick="onProjectClick"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:radius="8dp"
+            android:elevation="4dp"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:id="@+id/btnProjectFibonacci"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Project Fibonacci"
+            android:background="@drawable/custom_button_background"
+            android:textColor="@android:color/white"
+            android:onClick="onProjectClick"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:radius="8dp"
+            android:elevation="4dp"
+            android:layout_below="@id/btnProjectHello"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:id="@+id/btnProjectScroller"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Project Scroller"
+            android:background="@drawable/custom_button_background"
+            android:textColor="@android:color/white"
+            android:onClick="onProjectClick"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:radius="8dp"
+            android:elevation="4dp"
+            android:layout_below="@id/btnProjectFibonacci"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:id="@+id/btnProjectSecond"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Project Second"
+            android:background="@drawable/custom_button_background"
+            android:textColor="@android:color/white"
+            android:onClick="onProjectClick"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:radius="8dp"
+            android:elevation="4dp"
+            android:layout_below="@id/btnProjectScroller"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:id="@+id/btnProjectAlarm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Project Alarm"
+            android:background="@drawable/custom_button_background"
+            android:textColor="@android:color/white"
+            android:onClick="onProjectClick"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:radius="8dp"
+            android:elevation="4dp"
+            android:layout_below="@id/btnProjectSecond"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Add more buttons as needed -->
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
