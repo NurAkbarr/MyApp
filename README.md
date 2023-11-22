@@ -9,5 +9,4 @@
 
 # Launcher Splash
 
-#### [OUTPUT](https://github.com/NurAkbarr/MyApp/tree/3b0e3994f1de65aaab8de03e4d52ea829a821392/assets)
-
+#### [OUTPUT]()
