@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- custom_button_background.xml -->
-<shape xmlns:android="http://schemas.android.com/apk/res/android"
-    android:shape="rectangle">
-    <solid android:color="#DF1544" /> <!-- Warna latar belakang -->
-    <corners android:radius="8dp" /> <!-- Radius sudut -->
-</shape>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <gradient
+                android:angle="90"
+                android:startColor="#3F51B5"
+                android:endColor="#303F9F" /> <!-- Warna latar belakang saat ditekan -->
+            <corners android:radius="8dp" /> <!-- Radius sudut -->
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:angle="90"
+                android:startColor="#00BCD4"
+                android:endColor="#0097A7" /> <!-- Warna latar belakang default -->
+            <corners android:radius="8dp" /> <!-- Radius sudut -->
+        </shape>
+    </item>
+</selector>
