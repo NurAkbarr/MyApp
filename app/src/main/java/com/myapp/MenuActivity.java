@@ -27,6 +27,8 @@ public class MenuActivity extends AppCompatActivity {
             startProject(SecondActivity.class);
         } else if (view.getId() == R.id.btnProjectAlarm) {
             startProject(AlarmActivity.class);
+        }else if (view.getId() == R.id.btnProjectMap) {
+            startProject(MapActivity.class);
         }
     }
 

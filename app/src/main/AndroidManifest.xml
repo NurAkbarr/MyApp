@@ -30,6 +30,8 @@
         <activity android:name=".SecondActivity" />
         <activity android:name=".AlarmActivity" />
         <activity android:name=".MenuActivity" />
+        <activity android:name=".MapActivity" />
+
 
     </application>
 
