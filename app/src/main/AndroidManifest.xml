@@ -31,6 +31,12 @@
         <activity android:name=".AlarmActivity" />
         <activity android:name=".MenuActivity" />
         <activity android:name=".MapActivity" />
+        <activity android:name=".DashboardActivity" />
+
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
 
 
     </application>

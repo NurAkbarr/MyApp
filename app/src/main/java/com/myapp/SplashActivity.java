@@ -1,4 +1,3 @@
-// SplashActivity.java
 package com.myapp;
 
 import android.content.Intent;
@@ -9,7 +8,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class SplashActivity extends AppCompatActivity {
 
-    private static final int SPLASH_DELAY = 3000; // Waktu penundaan dalam milidetik (contoh: 3000 ms atau 3 detik)
+    private static final int SPLASH_DELAY = 3000; 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,8 +30,9 @@ public class SplashActivity extends AppCompatActivity {
     }
 
     private void openMenu() {
-        Intent intent = new Intent(SplashActivity.this, MenuActivity.class);
+        Intent intent = new Intent(SplashActivity.this, DashboardActivity.class);
         startActivity(intent);
-        finish(); // Sebaiknya ditambahkan untuk menutup SplashActivity setelah membuka MenuActivity
+        finish(); // Sebaiknya ditambahkan untuk menutup SplashActivity setelah membuka DashboardActivity
     }
+
 }
