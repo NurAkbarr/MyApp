@@ -22,6 +22,8 @@ public class DashboardActivity extends AppCompatActivity {
         CardView chatCard = findViewById(R.id.ChatCard);
         CardView alarmCard = findViewById(R.id.AlarmCard);
         CardView mapsCard = findViewById(R.id.MapsCard);
+        CardView fragmentCard = findViewById(R.id.FragmentCard);
+
 
         // Set click actions for each CardView
         helloCard.setOnClickListener(new View.OnClickListener() {
@@ -68,6 +70,14 @@ public class DashboardActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(DashboardActivity.this, MapActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        fragmentCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(DashboardActivity.this, FragmentActivity.class);
                 startActivity(intent);
             }
         });

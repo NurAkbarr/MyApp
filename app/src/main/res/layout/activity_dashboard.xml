@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -8,24 +7,62 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/relativeLayout"
-        android:padding="15dp">
-
-        <ImageView
-            android:id="@+id/akbarImage"
+        android:layout_height="wrap_content">
+        
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
             android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:layout_marginTop="16dp"
-            android:scaleType="center"
-            android:src="@drawable/akbar" />
+            android:layout_height="250dp"
+            android:background="@drawable/background_top"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="80dp"
+                android:fontFamily="sans-serif-black"
+                android:text="Dashboard Menu"
+                android:textColor="#ffffff"
+                android:textSize="28sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@mipmap/top_1" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="casual"
+                android:text="Akbar App"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/row1"
             android:orientation="horizontal"
-            android:layout_below="@+id/akbarImage"
+            android:layout_below="@+id/constraintLayout"
             android:layout_marginTop="16dp">
 
             <androidx.cardview.widget.CardView
@@ -77,24 +114,24 @@
                     android:layout_height="match_parent">
 
                     <TextView
+                        android:id="@+id/btnProjectFibonacci"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/btnProjectFibonacci"
-                        android:text="Fibonacci"
-                        android:textSize="20sp"
-                        android:textColor="@color/lavender"
-                        android:fontFamily="@font/poppins_semibold"
-                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/calculatorImage"
                         android:layout_centerHorizontal="true"
-                        android:layout_below="@+id/calculatorImage"/>
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="Fibonacci"
+                        android:textColor="@color/lavender"
+                        android:textSize="20sp" />
 
                     <ImageView
+                        android:id="@+id/calculatorImage"
                         android:layout_width="70dp"
                         android:layout_height="70dp"
-                        android:id="@+id/calculatorImage"
-                        android:src="@drawable/calculator"
+                        android:layout_centerHorizontal="true"
                         android:layout_marginTop="15dp"
-                        android:layout_centerHorizontal="true"/>
+                        android:src="@drawable/calculator" />
 
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
@@ -260,8 +297,7 @@
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
         </LinearLayout>
-        <!-- Row 4 -->
-        <!-- Row 4 -->
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -273,7 +309,7 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:id="@+id/MovieCard"
+                android:id="@+id/FragmentCard"
                 android:layout_weight="1"
                 android:layout_marginEnd="8dp"
                 app:cardElevation="20dp"
@@ -286,7 +322,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/btnProjectMovie"
+                        android:id="@+id/btnProjectFragment"
                         android:text="Movies"
                         android:textSize="20sp"
                         android:textColor="@color/lavender"

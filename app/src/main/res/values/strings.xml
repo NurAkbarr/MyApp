@@ -22,4 +22,8 @@
     <string name="button_count">Count</string>
     <string name="button_toast">Toast</string>
     <string name="fibonacci_message">Program Fibonacci</string>
+    <string name="home">Home</string>
+    <string name="bioskop">Bioskop</string>
+    <string name="maps">Maps</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
