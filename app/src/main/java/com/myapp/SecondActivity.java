@@ -25,7 +25,7 @@ public class SecondActivity extends AppCompatActivity {
         Intent intent = getIntent();
         String message = intent.getStringExtra(OneActivity.EXTRA_MASSAGE);
 
-        TextView textView = findViewById(R.id.text_massage);
+        TextView textView = findViewById(R.id.text_message);
         textView.setText(message);
     }
 

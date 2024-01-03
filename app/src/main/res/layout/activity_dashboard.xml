@@ -8,7 +8,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-        
+
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/constraintLayout"
             android:layout_width="match_parent"
@@ -331,7 +331,6 @@
                         android:layout_centerHorizontal="true"
                         android:layout_below="@+id/moviesImage"/>
 
-                    <!-- Adjust the size of the ImageView for Movies -->
                     <ImageView
                         android:layout_width="70dp"
                         android:layout_height="70dp"

@@ -8,6 +8,8 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
+import com.myapp.fragment.ViewPagerActivity;
+
 public class DashboardActivity extends AppCompatActivity {
 
     @Override
@@ -77,7 +79,7 @@ public class DashboardActivity extends AppCompatActivity {
         fragmentCard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(DashboardActivity.this, FragmentActivity.class);
+                Intent intent = new Intent(DashboardActivity.this, ViewPagerActivity.class);
                 startActivity(intent);
             }
         });
