@@ -39,4 +39,4 @@ Menampilkan perhitungan penjumlahan 1 atau Toast.
 
 ## **DEMO**
 
-https://github.com/NurAkbarr/MyApp/assets/115671335/8598f7d4-acde-4449-bec7-ac792e707e17
+(https://github.com/NurAkbarr/MyApp/assets/115671335/56406d56-c2eb-4de0-8c0d-d8a3927222c9)
